@@ -1,0 +1,104 @@
+@media screen and (min-width: 768px) {
+  .container {
+    padding-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 60% 15% 10% 15%;
+    grid-template-areas: 'profile  follow   skills   contact' 'projects projects projects projects' 'footer   footer   footer   footer';
+  }
+  .profile {
+    grid-area: profile;
+    display: flex;
+    position: relative;
+    height: 60px;
+    padding-left: 1rem;
+    align-items: center;
+    grid-template-columns: auto auto;
+    background-color: #fff;
+    border-bottom: 2px solid #E5E5E5;
+  }
+  .contact {
+    grid-area: contact;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+    border-bottom: 2px solid #E5E5E5;
+    background-color: #fff;
+  }
+  .contact .contact_button {
+    display: flex;
+    width: 90px;
+    height: 35px;
+    border-radius: 0px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F43786;
+    /* margin: 0px; */
+  }
+  .contact .contact_button svg {
+    fill: #F43786;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.1rem;
+  }
+  .contact .contact_button span {
+    display: flex;
+    font-size: 1.2rem;
+    color: #F43786;
+  }
+  .skills {
+    grid-area: skills;
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+    border-bottom: 2px solid #E5E5E5;
+    border-top: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    /* margin: 0px; */
+  }
+  .skills .skills_button {
+    display: flex;
+    width: 50px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  .projects {
+    grid-area: projects;
+    width: 100%;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: auto auto;
+  }
+  .follow {
+    grid-area: follow;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+    border-top: 0px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid #E5E5E5;
+  }
+  .footer {
+    grid-area: footer;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    border-top: 2px solid #E5E5E5;
+    background-color: rgb(255, 255, 255);
+  }
+}

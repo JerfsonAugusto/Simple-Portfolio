@@ -1,0 +1,19 @@
+@media screen and (min-width: 1024px) {
+  .container {
+    padding-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 60% 15% 10% 15%;
+    grid-template-areas: 
+    'profile  follow   skills   contact' 
+    'projects projects projects projects' 
+    'footer   footer footer footer'
+
+  }
+  .projects {
+    grid-area: projects;
+    width: 100%;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: auto auto auto;
+  }
+}
